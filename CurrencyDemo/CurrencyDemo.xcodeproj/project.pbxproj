@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		1562FDECBA1C06F6581AD660 /* Pods_CurrencyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80C27DE09ECD652706B89D3 /* Pods_CurrencyDemo.framework */; };
 		4204695C20FF33820054D5DF /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4204695A20FF33820054D5DF /* CurrencyViewController.swift */; };
+		42EF221520FF755100DDDFEE /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF221320FF755100DDDFEE /* CountryViewController.swift */; };
+		42EF221620FF755100DDDFEE /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF221420FF755100DDDFEE /* CountryViewController.xib */; };
+		42EF221B20FF832600DDDFEE /* CounrtyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF221920FF832600DDDFEE /* CounrtyCell.swift */; };
+		42EF221C20FF832600DDDFEE /* CounrtyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF221A20FF832600DDDFEE /* CounrtyCell.xib */; };
+		42EF221F20FF9C1E00DDDFEE /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF221E20FF9C1E00DDDFEE /* CurrencyModel.swift */; };
+		42EF222720FFA9E400DDDFEE /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF222520FFA9E400DDDFEE /* ChargeViewController.swift */; };
+		42EF222820FFA9E400DDDFEE /* ChargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF222620FFA9E400DDDFEE /* ChargeViewController.xib */; };
+		42EF222A20FFAB5B00DDDFEE /* ChargeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF222920FFAB5B00DDDFEE /* ChargeModel.swift */; };
+		42EF222D20FFABCF00DDDFEE /* ChargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF222B20FFABCF00DDDFEE /* ChargeCell.swift */; };
+		42EF222E20FFABCF00DDDFEE /* ChargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF222C20FFABCF00DDDFEE /* ChargeCell.xib */; };
+		42EF223120FFB05100DDDFEE /* NewChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EF222F20FFB05100DDDFEE /* NewChargeViewController.swift */; };
+		42EF223220FFB05100DDDFEE /* NewChargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF223020FFB05100DDDFEE /* NewChargeViewController.xib */; };
 		42F705F320FF1E9A0029A8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F705F220FF1E9A0029A8F1 /* AppDelegate.swift */; };
 		42F705F520FF1E9A0029A8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F705F420FF1E9A0029A8F1 /* ViewController.swift */; };
 		42F705F820FF1E9A0029A8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F705F620FF1E9A0029A8F1 /* Main.storyboard */; };
@@ -18,6 +30,18 @@
 
 /* Begin PBXFileReference section */
 		4204695A20FF33820054D5DF /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		42EF221320FF755100DDDFEE /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		42EF221420FF755100DDDFEE /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryViewController.xib; sourceTree = "<group>"; };
+		42EF221920FF832600DDDFEE /* CounrtyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounrtyCell.swift; sourceTree = "<group>"; };
+		42EF221A20FF832600DDDFEE /* CounrtyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounrtyCell.xib; sourceTree = "<group>"; };
+		42EF221E20FF9C1E00DDDFEE /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		42EF222520FFA9E400DDDFEE /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
+		42EF222620FFA9E400DDDFEE /* ChargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChargeViewController.xib; sourceTree = "<group>"; };
+		42EF222920FFAB5B00DDDFEE /* ChargeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeModel.swift; sourceTree = "<group>"; };
+		42EF222B20FFABCF00DDDFEE /* ChargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeCell.swift; sourceTree = "<group>"; };
+		42EF222C20FFABCF00DDDFEE /* ChargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChargeCell.xib; sourceTree = "<group>"; };
+		42EF222F20FFB05100DDDFEE /* NewChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChargeViewController.swift; sourceTree = "<group>"; };
+		42EF223020FFB05100DDDFEE /* NewChargeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewChargeViewController.xib; sourceTree = "<group>"; };
 		42F705EF20FF1E9A0029A8F1 /* CurrencyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F705F220FF1E9A0029A8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F705F420FF1E9A0029A8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +66,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42EF221720FF81A900DDDFEE /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				42EF222220FFA97900DDDFEE /* Controller */,
+				42EF221D20FF9C0100DDDFEE /* Model */,
+				42EF221820FF82CF00DDDFEE /* View */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		42EF221820FF82CF00DDDFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42EF221920FF832600DDDFEE /* CounrtyCell.swift */,
+				42EF221A20FF832600DDDFEE /* CounrtyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42EF221D20FF9C0100DDDFEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42EF221E20FF9C1E00DDDFEE /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42EF222020FFA95F00DDDFEE /* Charge */ = {
+			isa = PBXGroup;
+			children = (
+				42EF222420FFA98E00DDDFEE /* Controller */,
+				42EF222320FFA98800DDDFEE /* View */,
+				42EF222120FFA97200DDDFEE /* Model */,
+			);
+			path = Charge;
+			sourceTree = "<group>";
+		};
+		42EF222120FFA97200DDDFEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42EF222920FFAB5B00DDDFEE /* ChargeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42EF222220FFA97900DDDFEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4204695A20FF33820054D5DF /* CurrencyViewController.swift */,
+				42EF221320FF755100DDDFEE /* CountryViewController.swift */,
+				42EF221420FF755100DDDFEE /* CountryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42EF222320FFA98800DDDFEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42EF222B20FFABCF00DDDFEE /* ChargeCell.swift */,
+				42EF222C20FFABCF00DDDFEE /* ChargeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42EF222420FFA98E00DDDFEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42EF222520FFA9E400DDDFEE /* ChargeViewController.swift */,
+				42EF222620FFA9E400DDDFEE /* ChargeViewController.xib */,
+				42EF222F20FFB05100DDDFEE /* NewChargeViewController.swift */,
+				42EF223020FFB05100DDDFEE /* NewChargeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		42F705E620FF1E9A0029A8F1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +162,10 @@
 		42F705F120FF1E9A0029A8F1 /* CurrencyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				42EF222020FFA95F00DDDFEE /* Charge */,
 				42F705F220FF1E9A0029A8F1 /* AppDelegate.swift */,
 				42F705F420FF1E9A0029A8F1 /* ViewController.swift */,
-				4204695A20FF33820054D5DF /* CurrencyViewController.swift */,
+				42EF221720FF81A900DDDFEE /* Currency */,
 				42F705F620FF1E9A0029A8F1 /* Main.storyboard */,
 				42F705F920FF1E9C0029A8F1 /* Assets.xcassets */,
 				42F705FB20FF1E9C0029A8F1 /* LaunchScreen.storyboard */,
@@ -151,9 +251,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EF222E20FFABCF00DDDFEE /* ChargeCell.xib in Resources */,
 				42F705FD20FF1E9C0029A8F1 /* LaunchScreen.storyboard in Resources */,
+				42EF221C20FF832600DDDFEE /* CounrtyCell.xib in Resources */,
+				42EF221620FF755100DDDFEE /* CountryViewController.xib in Resources */,
 				42F705FA20FF1E9C0029A8F1 /* Assets.xcassets in Resources */,
+				42EF222820FFA9E400DDDFEE /* ChargeViewController.xib in Resources */,
 				42F705F820FF1E9A0029A8F1 /* Main.storyboard in Resources */,
+				42EF223220FFB05100DDDFEE /* NewChargeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,11 +291,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CurrencyDemo/Pods-CurrencyDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Closures/Closures.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Closures.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,8 +313,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42F705F520FF1E9A0029A8F1 /* ViewController.swift in Sources */,
+				42EF222720FFA9E400DDDFEE /* ChargeViewController.swift in Sources */,
+				42EF222D20FFABCF00DDDFEE /* ChargeCell.swift in Sources */,
+				42EF221520FF755100DDDFEE /* CountryViewController.swift in Sources */,
+				42EF221F20FF9C1E00DDDFEE /* CurrencyModel.swift in Sources */,
+				42EF223120FFB05100DDDFEE /* NewChargeViewController.swift in Sources */,
 				4204695C20FF33820054D5DF /* CurrencyViewController.swift in Sources */,
 				42F705F320FF1E9A0029A8F1 /* AppDelegate.swift in Sources */,
+				42EF221B20FF832600DDDFEE /* CounrtyCell.swift in Sources */,
+				42EF222A20FFAB5B00DDDFEE /* ChargeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

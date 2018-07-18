@@ -47,7 +47,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZI-VI-eMu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="96"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人民币 copy" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-Dk-uE0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人民币" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-Dk-uE0">
                                         <rect key="frame" x="20" y="31" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="0ro-fG-lmb"/>
@@ -73,7 +73,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,7 +108,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxC-d2-8u7">
                                 <rect key="frame" x="0.0" y="160.5" width="375" height="96"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="美元 copy 2" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-9w-XAj">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="美元" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-9w-XAj">
                                         <rect key="frame" x="20" y="31" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="Ohy-qA-X7S"/>
@@ -127,7 +127,7 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-ag-1f6">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-ag-1f6">
                                         <rect key="frame" x="341" y="27" width="14" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6Gu-1p-tYv"/>
@@ -172,6 +172,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="6wj-IA-hcm"/>
                     <connections>
+                        <outlet property="currencyCodeLabel" destination="fsd-6B-H65" id="Y1K-9a-mzu"/>
+                        <outlet property="currencyImageView" destination="dr5-9w-XAj" id="iAU-Gl-t4t"/>
+                        <outlet property="currencyNameLabel" destination="3wP-8d-VSC" id="Zaf-0q-BbE"/>
+                        <outlet property="currencyTF" destination="8S8-ag-1f6" id="SiP-w4-hQb"/>
+                        <outlet property="currencyView" destination="wxC-d2-8u7" id="7DB-J7-vv3"/>
+                        <outlet property="rmbTF" destination="pYK-Fu-h03" id="Fjs-Ta-R9p"/>
                         <outlet property="view" destination="Zbp-sG-znR" id="9F7-fH-dtg"/>
                     </connections>
                 </viewController>
@@ -197,7 +203,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="人民币 copy" width="34" height="34"/>
-        <image name="美元 copy 2" width="34" height="34"/>
+        <image name="人民币" width="34" height="34"/>
+        <image name="美元" width="34" height="34"/>
     </resources>
 </document>
