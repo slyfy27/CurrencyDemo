@@ -84,7 +84,7 @@ class AssetViewController: BaseViewController, UITableViewDelegate, UITableViewD
             self.naviTopConstraint.constant = 44
             self.topViewHeightConstraint.constant = 249
         }
-//        self.createGradient()
+        self.createGradient()
     }
     
     func createGradient() {
@@ -103,6 +103,9 @@ class AssetViewController: BaseViewController, UITableViewDelegate, UITableViewD
         else{
             gradientLayer.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 225)
         }
+        gradientLayer.zPosition = 0
+        self.visableBtn.layer.zPosition = 1
+        self.moneyLabel.layer.zPosition = 1
         self.topView.layer.addSublayer(gradientLayer)
     }
     
