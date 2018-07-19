@@ -1,5 +1,5 @@
 //
-//  NewChargeViewController.swift
+//  BaseViewController.swift
 //  CurrencyDemo
 //
 //  Created by wushuying on 2018/7/19.
@@ -8,19 +8,27 @@
 
 import UIKit
 
-class NewChargeViewController: UIViewController {
+class BaseViewController: UIViewController {
 
-    @IBOutlet weak var chargeNameTF: UITextField!
-    @IBOutlet weak var incomeTF: UITextField!
-    @IBOutlet weak var outComeTF: UITextField!
-    @IBOutlet weak var SureBtn: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "资产管理"
-        self.SureBtn.layer.cornerRadius = 22
-        self.SureBtn.layer.masksToBounds = true
+        self.customBack()
+    }
+    
+    func customBack() {
+        let leftButton = UIButton(type: .custom)
+        leftButton.frame = CGRect(x: 0, y: 0, width: 65, height: 44)
+        leftButton.onTap {
+            self.goBack()
+        }
+        leftButton.setImage(UIImage(named: "返回-蓝"), for: .normal)
+        leftButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 44)
+        let leftBarButton = UIBarButtonItem.init(customView: leftButton)
+        self.navigationItem.leftBarButtonItem = leftBarButton;
+    }
+    
+    func goBack() {
+        self.navigationController?.popViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {

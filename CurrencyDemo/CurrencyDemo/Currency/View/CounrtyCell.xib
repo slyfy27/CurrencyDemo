@@ -41,7 +41,7 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-ab-PYg">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fill" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-ab-PYg">
                                 <rect key="frame" x="285" y="32" width="15" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="GZN-Hi-2OD"/>
@@ -91,6 +91,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Fill" width="15" height="11"/>
         <image name="美元 copy 2" width="34" height="34"/>
     </resources>
 </document>

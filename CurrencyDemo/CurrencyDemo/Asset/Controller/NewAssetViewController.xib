@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewChargeViewController" customModule="CurrencyDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewAssetViewController" customModule="CurrencyDemo" customModuleProvider="target">
             <connections>
                 <outlet property="SureBtn" destination="m8z-Jj-Ebx" id="RE6-Aq-Eqb"/>
                 <outlet property="chargeNameTF" destination="7W7-aF-Frt" id="wkv-4T-IKY"/>
@@ -48,7 +48,7 @@
                     <color key="textColor" red="0.12941176470588234" green="0.82745098039215681" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6I-JK-e4a">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U6I-JK-e4a">
                     <rect key="frame" x="247" y="83" width="85" height="26"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="GQH-ba-tfu"/>
@@ -64,7 +64,7 @@
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-Bt-nki">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-Bt-nki">
                     <rect key="frame" x="247" y="129.5" width="85" height="26"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="Vfb-1F-Uja"/>

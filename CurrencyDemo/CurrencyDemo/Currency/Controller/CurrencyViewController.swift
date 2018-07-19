@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import Alamofire
-import Closures
+@_exported import Alamofire
+@_exported import Closures
 
 let url: String = "https://sp0.baidu.com/8aQDcjqpAAV3otqbppnN2DJv/api.php"
 
-class CurrencyViewController: UIViewController {
+class CurrencyViewController: BaseViewController {
     var currencyName: String = "美元"
     var currency: CurrencyResponse?
     var country: CurrencyMoneyCountry = CurrencyMoneyCountry(){
@@ -21,8 +21,13 @@ class CurrencyViewController: UIViewController {
             currencyImageView.image = UIImage(named: country.name)
             currencyNameLabel.text = self.currencyName
             currencyCodeLabel.text = country.code
-            let query: String = self.rmbTF.text! + "人民币等于多少" + self.currencyName
-            self.convertRate(query: query)
+            if country.name.elementsEqual("人民币") {
+                self.currencyTF.text = self.rmbTF.text
+            }
+            else{
+                let query: String = self.rmbTF.text! + "人民币等于多少" + self.currencyName
+                self.convertRate(query: query)
+            }
         }
     }
     @IBOutlet weak var currencyView: UIView!
@@ -44,6 +49,7 @@ class CurrencyViewController: UIViewController {
             if let tab = self.currency?.data.first?.tab.filter({$0.txt.elementsEqual("热门")}){
                 let vc: CountryViewController = CountryViewController()
                 vc.tab = tab.first!
+                vc.country = self.country
                 vc.backClosure = {
                     (country) -> Void in
                     self.country = country
@@ -60,11 +66,13 @@ class CurrencyViewController: UIViewController {
     
     //调用百度api获取实时汇率
     func convertRate(query: String) {
+        let hud = SwiftNotice.wait()
         Alamofire.request(url, method: HTTPMethod.get, parameters: ["query":query,"resource_id":"6017","format":"json"]).responseString { (response) in
             if let value = response.value{
                 self.currency = CurrencyResponse.deserialize(from: value)!
                 self.currencyTF.text = self.currency?.data.first?.number2
             }
+            hud.clearAllNotice()
         }
     }
 

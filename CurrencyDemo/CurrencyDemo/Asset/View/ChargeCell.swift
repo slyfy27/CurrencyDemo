@@ -13,15 +13,15 @@ class ChargeCell: UITableViewCell {
     @IBOutlet weak var chargeNameLabel: UILabel!
     @IBOutlet weak var chargeMoneyLabel: UILabel!
     
-    var charge: ChargeModel = ChargeModel(){
+    var asset: AssetModel = AssetModel(){
         didSet{
-            chargeNameLabel.text = charge.name
-            if charge.income.count > 0 {
-                chargeMoneyLabel.text = "+" + charge.income
+            chargeNameLabel.text = asset.name
+            if asset.income.count > 0 {
+                chargeMoneyLabel.text = "+" + asset.income
                 chargeMoneyLabel.textColor = UIColor.init(red: 255/255.0, green: 93/255.0, blue: 93/255.0, alpha: 1.0)
             }
             else{
-                chargeMoneyLabel.text = "-" + charge.outcome
+                chargeMoneyLabel.text = "-" + asset.outcome
                 chargeMoneyLabel.textColor = UIColor.init(red: 33/255.0, green: 211/255.0, blue: 66/255.0, alpha: 1.0)
             }
         }

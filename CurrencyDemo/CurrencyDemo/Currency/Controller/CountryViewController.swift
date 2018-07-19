@@ -10,10 +10,11 @@ import UIKit
 
 typealias BackClosureType = (CurrencyMoneyCountry) -> Void
 
-class CountryViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
+class CountryViewController: BaseViewController ,UITableViewDataSource,UITableViewDelegate{
     
     var backClosure: BackClosureType?
     let cellIdentifier: String = "CounrtyCell"
+    var country: CurrencyMoneyCountry = CurrencyMoneyCountry()
     
     @IBOutlet weak var countryTableView: UITableView!
     
@@ -42,6 +43,13 @@ class CountryViewController: UIViewController ,UITableViewDataSource,UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CounrtyCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! CounrtyCell
         cell.country = self.tab.moneys.money[indexPath.row]
+        if cell.country.name.elementsEqual(self.country.name) {
+            cell.selectedImg.isHidden = false
+        }
+        else{
+            cell.selectedImg.isHidden = true
+        }
+        cell.selectionStyle = .none
         return cell
     }
     

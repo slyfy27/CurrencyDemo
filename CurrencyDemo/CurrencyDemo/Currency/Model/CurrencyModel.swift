@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import HandyJSON
+@_exported import HandyJSON
 
 struct CurrencyResponse: HandyJSON {
     var status: String = ""

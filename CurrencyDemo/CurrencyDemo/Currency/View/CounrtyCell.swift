@@ -29,7 +29,7 @@ class CounrtyCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+//        self.selectedImg.isHidden = !selected
         // Configure the view for the selected state
     }
     
