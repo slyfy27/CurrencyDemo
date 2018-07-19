@@ -66,13 +66,12 @@ class CurrencyViewController: BaseViewController {
     
     //调用百度api获取实时汇率
     func convertRate(query: String) {
-        let hud = SwiftNotice.wait()
         Alamofire.request(url, method: HTTPMethod.get, parameters: ["query":query,"resource_id":"6017","format":"json"]).responseString { (response) in
             if let value = response.value{
                 self.currency = CurrencyResponse.deserialize(from: value)!
                 self.currencyTF.text = self.currency?.data.first?.number2
             }
-            hud.clearAllNotice()
+            SwiftNotice.noticeOnStatusBar("获取最新汇率成功", autoClear: true, autoClearTime: 1)
         }
     }
 
