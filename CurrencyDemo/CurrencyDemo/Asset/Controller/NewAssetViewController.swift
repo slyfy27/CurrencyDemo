@@ -24,6 +24,12 @@ class NewAssetViewController: BaseViewController {
         self.SureBtn.onTap {
             if (self.chargeNameTF.text?.count)! > 0 {
                 if (self.outComeTF.text?.count)! > 0 || (self.incomeTF.text?.count)! > 0{
+                    if (self.outComeTF.text?.count)! > 0 && (self.incomeTF.text?.count)! > 0{
+                        self.outComeTF.text = ""
+                        self.incomeTF.text = ""
+                        SwiftNotice.noticeOnStatusBar("请不要同时填写收入和支出", autoClear: true, autoClearTime: 1)
+                        return
+                    }
                     let newAsset = self.composeNewAsset()
                     var storeAsset: AssetStoreModel? = AssetStoreModel.deserialize(from: UserDefaults.standard.string(forKey: AssetStoreKey))
                     if var s = storeAsset{
